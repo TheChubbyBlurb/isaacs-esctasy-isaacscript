@@ -1,0 +1,3 @@
+<items gfxroot="gfx/items/" version="1">
+  <passive description="I feel funny..." gfx="Viagra.png" name="Viagra" />
+</items>
