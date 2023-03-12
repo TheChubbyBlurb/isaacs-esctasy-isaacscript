@@ -1,4 +1,8 @@
+import { validateCustomEnum } from "isaacscript-common";
+
 export const PlayerTypeCustom = {
-  JEZEBEL: Isaac.GetPlayerTypeByName("Jezebel", false),
-  JEZEBEL_B: Isaac.GetPlayerTypeByName("Jezebel", true),
+  JEZEBEL: Isaac.GetPlayerTypeByName("Jezebel"),
+  JEZEBEL_B: Isaac.GetPlayerTypeByName("Jezebel"),
 } as const;
+
+validateCustomEnum("PlayerTypeCustom", PlayerTypeCustom);
