@@ -39,8 +39,9 @@
     "customStages": [
       {
         "name": "GardenOfEden",
-        "xmlPath": "./customStages/GardenOfEden.xml",
+        "xmlPath": "./customStages/GardenOfEden/GardenOfEden.xml",
         "roomVariantPrefix": 100,
+        "music": "serenity",
       },
     ],
   },
