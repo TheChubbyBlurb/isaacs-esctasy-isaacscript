@@ -1,0 +1,16 @@
+<entities anm2root="gfx/" version="5">
+  <entity id="700" variant="0" name="fiddleford" baseHP="300" stageHP="0" boss="1" bossID="44" champion="0" collisionDamage="1" collisionMass="75" collisionRadius="20" friction="1" numGridCollisionPoints="12" shadowSize="28" portrait="65" anm2path="261.000_Dingle.anm2">
+    <bestiary transform="0,0,1" anim="Idle" />
+    <gibs amount="8" blood="0" bone="0" eye="0" gut="0" large="1" poop="1" />
+    <preload-snd id="303" />
+    <!-- SOUND_FAT_WIGGLE -->
+    <preload-snd id="301" />
+    <!-- SOUND_FART_GURG -->
+    <preload-snd id="37" />
+    <!-- SOUND_FART -->
+    <preload-snd id="315" />
+    <!-- SOUND_WHISTLE -->
+    <preload-snd id="72" />
+    <!-- SOUND_MEAT_JUMPS -->
+  </entity>
+</entities>

@@ -38,8 +38,14 @@
     // https://isaacscript.github.io/main/custom-stages
     "customStages": [
       {
-        "name": "GardenOfEden",
+        "name": "Garden Of Eden",
         "xmlPath": "./customStages/GardenOfEden/GardenOfEden.xml",
+        "roomVariantPrefix": 100,
+        "music": "serenity",
+      },
+      {
+        "name": "Babylon",
+        "xmlPath": "./customStages/Babylon/Babylon.xml",
         "roomVariantPrefix": 100,
         "music": "serenity",
       },

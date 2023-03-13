@@ -6,9 +6,12 @@ import { mod } from "./mod";
 
 import { postUpdateInit } from "./callbacks/postUpdate";
 
+// EntityType.FIDDLEFORD = Isaac.GetEntityTypeByName(fiddleford);
+
 main();
-JezebelStuff();
+// JezebelStuff();
 const TOP_LEFT_CORNER_GRID_INDEX = 32;
+const TOP_LEF_CORNER_GRID_INDEX = 32;
 
 mod.AddCallbackCustom(
   ModCallbackCustom.POST_GAME_STARTED_REORDERED,
@@ -30,17 +33,28 @@ function registerCallbacks(mod: Mod) {
 function postGameStartedReorderedFalse() {
   mod.spawnCustomTrapdoor(
     TOP_LEFT_CORNER_GRID_INDEX,
-    "GardenOfEden",
-    LevelStage.BASEMENT_1,
+    "Garden Of Eden",
+    LevelStage.WOMB_1,
   );
   mod.setHotkey(Keyboard.F1, () => {
-    mod.setCustomStage("GardenOfEden");
+    mod.setCustomStage("Garden Of Eden");
+    reloadRoom();
+  });
+
+  mod.spawnCustomTrapdoor(
+    TOP_LEF_CORNER_GRID_INDEX,
+    "Garden Of Eden",
+    LevelStage.WOMB_1,
+  );
+
+  mod.setHotkey(Keyboard.F2, () => {
+    mod.setCustomStage("Babylon");
     reloadRoom();
   });
 }
 
+// function GardenOfEdenDoor(mod:TrySpawnSecretExit(Animate, Force)) { sus }
+
 Isaac.DebugString("Initiated mod: Isaacs-Ecstasy");
 
-function JezebelStuff() {
-  // LOL
-}
+// function JezebelStuff() { LOL }
